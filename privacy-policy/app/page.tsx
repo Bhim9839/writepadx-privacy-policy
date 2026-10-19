@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
+const assetPath = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+
 type PolicySection = {
   id: string;
   number: string;
@@ -120,7 +122,7 @@ function BrandMark() {
         className="brand-image"
         height={512}
         priority
-        src="/writepadx_icon.svg"
+        src={assetPath("/writepadx_icon.svg")}
         width={512}
       />
     </span>
@@ -372,7 +374,7 @@ export default function Home() {
                   alt="Writepad X app icon"
                   className="about-logo"
                   height={72}
-                  src="/writepadx_icon.svg"
+                  src={assetPath("/writepadx_icon.svg")}
                   width={72}
                 />
                 <span className="about-eyebrow">A LITTLE ABOUT US</span>

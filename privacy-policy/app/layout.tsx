@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   description:
     "Learn how Writepad X handles notes, Android permissions, shared files, home-screen widgets, and Google Mobile Ads.",
   icons: {
-    icon: "/writepadx_icon.svg",
-    shortcut: "/writepadx_icon.svg",
-    apple: "/writepadx_icon.svg",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/writepadx_icon.svg`,
+    shortcut: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/writepadx_icon.svg`,
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/writepadx_icon.svg`,
   },
 };
 
