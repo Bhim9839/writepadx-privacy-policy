@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Writepad X premium app icon</title>
+  <desc id="desc">A cream notepad and black-and-gold pen over a bold golden X on a dark navy rounded square.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#202a3c"/><stop offset=".48" stop-color="#080d18"/><stop offset="1" stop-color="#02040a"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#fff1a0"/><stop offset=".22" stop-color="#ffd84d"/><stop offset=".62" stop-color="#ffb900"/><stop offset="1" stop-color="#d98000"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#e9e6df"/></linearGradient>
+    <linearGradient id="pen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#526078"/><stop offset=".28" stop-color="#151e30"/><stop offset=".72" stop-color="#050a14"/><stop offset="1" stop-color="#344057"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1024" height="1024" rx="190" fill="#000" opacity=".38"/>
+  <rect x="34" y="34" width="956" height="956" rx="174" fill="url(#bg)" stroke="url(#gold)" stroke-width="10"/>
+  <rect x="49" y="49" width="926" height="926" rx="160" fill="none" stroke="#fff0a0" stroke-opacity=".22" stroke-width="2"/>
+  <!-- notepad shadow and paper -->
+  <rect x="238" y="190" width="420" height="488" rx="66" fill="#000" opacity=".55" filter="url(#shadow)"/>
+  <path d="M286 182 H528 Q553 182 574 204 L642 274 Q660 292 660 320 V628 Q660 674 614 674 H286 Q240 674 240 628 V228 Q240 182 286 182Z" fill="url(#paper)"/>
+  <path d="M528 182 V258 Q528 292 562 292 H660Z" fill="url(#gold)" stroke="#d89912" stroke-width="3"/>
+  <path d="M298 328 H552 M298 392 H545 M298 456 H490" stroke="#20293a" stroke-width="27" stroke-linecap="round"/>
+  <path d="M278 585 C317 550 341 544 359 574 S401 608 447 570" fill="none" stroke="url(#gold)" stroke-width="17" stroke-linecap="round"/>
+  <!-- stylized X behind the pen -->
+  <path d="M590 472 L672 472 L746 560 L844 460 L881 460 L778 585 L848 655 L766 655 L720 608 L640 684 L590 684 L683 584Z" fill="url(#gold)" stroke="#ffdc57" stroke-width="5"/>
+  <path d="M720 608 L766 655 L848 655 L778 585Z" fill="#e68b00" opacity=".65"/>
+  <!-- pen, angled across paper -->
+  <g transform="rotate(43 590 405)">
+    <rect x="550" y="212" width="70" height="400" rx="34" fill="url(#pen)" stroke="#8792a4" stroke-width="4"/>
+    <rect x="550" y="250" width="70" height="18" rx="8" fill="url(#gold)"/>
+    <rect x="550" y="498" width="70" height="20" rx="7" fill="url(#gold)"/>
+    <path d="M550 574 L585 644 L620 574Z" fill="url(#gold)" stroke="#f9bd24" stroke-width="3"/>
+    <path d="M578 630 L585 644 L592 630Z" fill="#151b27"/>
+    <rect x="566" y="190" width="38" height="44" rx="18" fill="#1b2537" stroke="#8c98ac" stroke-width="3"/>
+    <path d="M621 288 Q651 300 646 342 L633 406" fill="none" stroke="url(#gold)" stroke-width="15" stroke-linecap="round"/>
+  </g>
+  <!-- wordmark -->
+  <text x="170" y="832" font-family="Inter, Arial, Helvetica, sans-serif" font-size="105" font-weight="750" letter-spacing="-5" fill="#fff">Writepad</text>
+  <text x="835" y="832" font-family="Inter, Arial, Helvetica, sans-serif" font-size="108" font-weight="900" letter-spacing="-7" fill="url(#gold)">X</text>
+</svg>
