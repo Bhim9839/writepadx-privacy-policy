@@ -1,8 +1,16 @@
-# Writepad X Privacy Policy
+# Privacy Policies
 
-A responsive privacy policy website for the Writepad X Android app. It explains
-the permissions in the app manifest, Google Mobile Ads, user-shared text and
-files, home-screen widgets, and Android backup settings.
+A responsive privacy policy website with separate pages for the Writepad X and
+Smart Player Android apps:
+
+- `/` — Writepad X notes, sharing, widgets, and advertising.
+- `/smart-player/` — Smart Player local media access, playback, and internet
+  connectivity.
+
+The Smart Player policy is based on the app details provided and avoids
+unverified claims about online services, uploads, or data retention. Verify it
+against the released app's behavior and integrations before relying on it as a
+formal privacy notice.
 
 ## Run locally
 
@@ -20,6 +28,6 @@ npm run lint
 npm run build
 ```
 
-The policy is based on the Android manifest supplied for the app. Verify it
-against the behavior of the released app and obtain appropriate legal review
-before relying on it as a formal privacy notice.
+The Writepad X policy is based on the Android manifest supplied for that app.
+Verify each policy against the behavior of its released app and obtain
+appropriate legal review before relying on it as a formal privacy notice.
