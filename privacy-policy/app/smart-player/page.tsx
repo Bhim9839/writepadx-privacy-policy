@@ -16,10 +16,10 @@ const policySections: PolicySection[] = [
     id: "overview",
     number: "01",
     title: "The short version",
-    description: "How Smart Player handles local media and internet access.",
+    description: "How Smart Player handles local media, storage, and internet access.",
     paragraphs: [
-      "Smart Player is a media player that can access and play local files on your device. It also has internet access. Local file access is used to let you choose and play media; internet access may support online features or services available in the app.",
-      "The app's exact online features, third-party services, data collection, and retention depend on the version and configuration you use. This policy does not assume that media files are uploaded or that particular analytics or advertising services are present.",
+      "Smart Player is a media player that can access and play local audio and video files on your device. Based on the supplied Android manifest, the app requests INTERNET, ACCESS_LOCAL_NETWORK, READ_MEDIA_VIDEO, READ_MEDIA_AUDIO, READ_EXTERNAL_STORAGE, and WRITE_EXTERNAL_STORAGE so it can browse local media and use network features when available.",
+      "The app's exact online features, third-party services, data collection, and retention depend on the version and configuration you use. This policy does not assume that media files are uploaded to a developer server or that any specific analytics or advertising service is enabled unless the final app behavior confirms it.",
     ],
   },
   {
@@ -57,10 +57,16 @@ const policySections: PolicySection[] = [
     id: "permissions",
     number: "05",
     title: "Device permissions",
-    description: "Permissions allow the player to perform the actions you request.",
+    description: "The manifest lists the main access permissions the app uses for media and connectivity.",
     paragraphs: [
-      "Smart Player needs an appropriate way to access media files you choose. Android may show a permission prompt or a system file picker. The exact permission names and scope can differ by Android version and app release.",
-      "Check Android Settings → Apps → Smart Player → Permissions to review the permissions currently granted. This policy does not claim a specific complete permission list.",
+      "Smart Player needs a way to access media files you choose. According to the manifest provided, the app requests INTERNET for network access, ACCESS_LOCAL_NETWORK for local network discovery when supported, READ_MEDIA_VIDEO and READ_MEDIA_AUDIO for video and audio files, and READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE for older Android versions when device storage is used.",
+      "Android may show a permission prompt or use the system file picker depending on the version of the OS and the app release. Check Android Settings → Apps → Smart Player → Permissions to review what is currently granted. The app may also use the device's media picker to access files without a broad long-term storage grant on newer Android versions.",
+    ],
+    bullets: [
+      "INTERNET — allows the app to connect to the internet for online features, requests, or network-based services.",
+      "ACCESS_LOCAL_NETWORK — allows the app to discover or access devices or services on the local network when relevant to local playback or connected features.",
+      "READ_MEDIA_VIDEO / READ_MEDIA_AUDIO — allows access to video and audio files on the device that the user chooses to play.",
+      "READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE — let the app read and write files in shared storage on Android 12 and below; newer Android versions typically rely on media-scoped access instead.",
     ],
   },
   {
