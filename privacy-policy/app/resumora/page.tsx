@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+const assetPath = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+
 type PolicySection = {
   id: string;
   number: string;
@@ -130,7 +133,7 @@ function ResumoraMark() {
   return (
     <span className="brand-mark">
       <Image
-        src="/resumora_app_icon.png"
+        src={assetPath("/resumora_app_icon.png")}
         alt=""
         aria-hidden="true"
         className="brand-image"
