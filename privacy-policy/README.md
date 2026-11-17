@@ -1,7 +1,7 @@
 # Privacy Policies
 
 A responsive privacy policy website with separate pages for the Writepad X and
-Smart Player Android apps, plus PDFusion, Doclyst, and Resumora policies:
+Smart Player Android apps, plus PDFusion, Doclyst, Resumora, and Musynx policies:
 
 - `/` — Writepad X notes, sharing, widgets, and advertising.
 - `/smart-player/` — Smart Player local media access, playback, and internet
@@ -13,6 +13,8 @@ Smart Player Android apps, plus PDFusion, Doclyst, and Resumora policies:
 - `/resumora/` — Resumora resume builder policy covering 50+ templates,
   resume import and saving, storage access, internet access for ads, and an
   About section.
+- `/musynx/` — Musynx online and offline music policy covering streaming,
+  local audio access, Android playback permissions, and an About section.
 
 The Smart Player policy is based on the app details provided and avoids
 unverified claims about online services, uploads, or data retention. Verify it
@@ -33,6 +35,11 @@ The `/resumora/` route covers resume creation, importing and saving files,
 storage access, and advertising. Verify the released app's data handling,
 file access scope, ad provider, and policy details before relying on it as a
 formal privacy notice.
+
+The `/musynx/` route covers online music streaming, offline playback, local
+audio access, and permissions that may support networking, background
+playback, and notifications. Confirm the exact permissions and providers
+against the released app before relying on it as a formal privacy notice.
 
 ## Run locally
 
